@@ -10,3 +10,5 @@ export type GameEntity = {
 export type Game = Omit<GameEntity,'id'>
 
 export type GameInsert = Omit<GameEntity,'id'|'status'|'grade'>
+
+export type GamePut= Omit<GameEntity,'id'|'name'|'platform'|'genre'>

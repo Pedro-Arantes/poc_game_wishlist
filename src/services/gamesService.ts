@@ -6,7 +6,7 @@ export async function haveGame(game:GameInsert){
     try {
         const result = await selectVeryGames(game.name)
         if (result.rowCount > 0 ) {
-            return true
+             return true
         }else{
             return false 
         }      
